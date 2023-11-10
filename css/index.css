@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+	font-family: 'Playfair Display', serif;
+}
+
+.label{
+	color: #2b99e3;
+	font-size: 26px;
+}
+
+.contactformdiv{
+	height: 100%;
+}
+
+.form{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+}
+
+.input{
+	width: 400px;
+	font-size: 22px;
+	border: 0;
+}
+
+.textarea{
+	width: 400px;
+	border: 0;
+	font-size: 22px;
+}
+
+.donatebtn{
+	width: 220px;
+	font-size: 19px;
+	background-color: #50ABE7;
+	text-decoration: none;
+	padding-top: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	align-text: center;
+	padding-bottom: 20px;
+	color: white;
+}
+
+
+.donatebtn:hover{
+	background-color: #148fe0;
+}
+
+.title{
+	width: 660px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #50ABE7;
+    padding-left: 50px;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar button {
+    cursor: pointer;
+}
+
+.logo{
+	max-width: 120px;
+}
+
+.actions{
+	height: 45vh;
+	background-color: #50ABE7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.goals{
+	height: 45vh;
+	background-color: #d6efff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.actionssection{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    flex-direction: row;
+
+}
+
+.goaltitle{
+	font-size: 50px;
+	padding: 5vh 0;
+	color: #50ABE7;
+}
+
+.goalname{
+	font-size: 34px;
+	color: #50ABE7;
+}
+
+.actionname{
+	font-size: 34px;
+	color: white;
+}
+
+.actiondesc{
+	font-size: 24px;
+	color: white;
+}
+
+.element-with-line {
+  width: 2px; 
+  height: 150px; 
+  background-color: #fff; 
+  margin: 0 20px; 
+}
+
+.element-with-line.blue{
+  width: 2px; 
+  height: 150px; 
+  background-color: #50ABE7; 
+  margin: 0 20px; 
+}
+
+.action{
+	padding: 0 2vw;
+}
+
+.goal{
+	padding: 0 3vw;
+}
+
+.actiontitle{
+	font-size: 50px;
+	padding: 5vh 0;
+	color: white;
+}
+
+
+.navbar .yes::after {
+    content: "▼"; 
+    display: inline-block;
+    		font-size: 14px;
+    margin-left: 5px; 
+    transition: transform 0.3s; 
+}
+
+.navbar .yes:hover::after {
+    transform: rotate(180deg); 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; 
+    margin: 0 40px;
+}
+
+.dropdown .dropbtn {
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropbtn.fot{
+	padding: 25px 5px;
+	font-size: 23px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #6CBDE9;
+	min-width: 180px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    font-size: 18px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+
+.dropdown-content a:hover {
+	background-color: #2da3e3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header{
+	height: 100vh;
+	width: 100%;
+}
+
+.header.partner{
+	height: 100vh;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  width: 200px; 
+  height: 4px; 
+  margin-bottom: 13px;
+  background-color: #fff;
+}
+
+.headerimg{
+	background-image: url(../img/header.png);
+	height: calc(100vh - 100px);
+}
+
+.partnersspec{
+	padding-top: 40px;
+}
+
+.partnersdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+	width: 100%;
+}
+
+.headerimg.planned{
+	background-image: none;
+	background-color: #d6efff;
+
+}
+
+.mottodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.headerbar {
+	background-color: #50ABE7;
+	color: #fff;
+	height: 100px;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.motto{
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.motto.planned{
+    color: #50ABE7;
+    font-size: 60px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+
+.titlediv{
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1vw;
+	padding-bottom: 5px;
+	width: 40%;
+}
+
+.logoheader{
+	max-width: 80px;
+	max-height: 80px;
+}
+
+.socialmediadiv{
+	padding-top: 25px;
+	padding-bottom: 13px;
+}
+
+.smbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0 10px;
+}
+
+.smimg {
+    width: 45px; 
+    height: auto; 
+}
+
+.footer {
+	background-color: #50ABE7;
+
+	color: #fff;
+	font-size: 20px;
+	height: 180px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.copyright{
+    margin-bottom: 10px;
+}
