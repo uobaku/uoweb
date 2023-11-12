@@ -22,6 +22,10 @@ document.getElementById("prtbtn").addEventListener("click", function() {
     location.href = "partners.html"
 });
 
+document.getElementById("partner").addEventListener("click", function() {
+    location.href = "partners.html"
+});
+
 document.getElementById("hstevntbtn").addEventListener("click", function() {
     location.href = "hosted.html"
 });
