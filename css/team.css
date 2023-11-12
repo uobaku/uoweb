@@ -19,7 +19,6 @@ body{
 
 .partnerstitle{
     padding: 40px 0;
-    max-width: 1000px;
     text-align: center;
     font-size: 42px;
     color: #2b99e3;
@@ -42,32 +41,32 @@ body{
 .teamtitle{
     color: #2b99e3;
     font-size: 40px;
-    padding: 2vh;
+    padding: 30px;
 }
 
 .orgamaintitle{
     color: #2b99e3;
     font-size: 40px;
-    padding-top: 8vh;
-    padding-bottom: 2vh;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .header{
     background-color: #d6efff;
-    height: 905vh;
+    height: 8150px
 }
 
 .header.partners{
     background-color: #d6efff;
-    height: 245vh;
+    height: 2200px
 }
 
 .personpres{
-    padding: 1vh 5vw;
+    padding: 5px 5vw;
 }
 
 .person{
-    padding: 2vh 3vw;
+    padding: 25px 35px;
 }
 
 .presidencyimage{
@@ -77,7 +76,6 @@ body{
 }
 
 .orgaimg{
-    background-image: url(../img/template.png);
     width: 350px;
     height: 350px;
     outline: 4px solid #50ABE7;
@@ -98,7 +96,6 @@ body{
 
 .organizational{
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -116,4 +113,108 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .orgamaintitle{
+        font-size: 34px;
+    }
+    .personpres{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .organizational{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .presidency{
+        flex-direction: column;
+    }
+    .presidencyimage {
+        width: 340px;
+        height: 340px;
+    }
+    .header{
+        height: 20900px;
+    }
+    .presidencytitle{
+        max-width: 340px;
+        font-size: 32px;
+    }
+
+    .presidencyp{
+        max-width: 340px;
+        font-size: 20px;
+    }
+    .orgaimg{
+        width: 340px;
+        height: 340px;
+        outline: 4px solid #50ABE7;
+    }
+    .orgatitle{
+        max-width: 340px;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+    .orgamaintitle{
+        font-size: 30px;
+    }
+    .presidencyimage {
+        width: 280px;
+        height: 280px;
+    }
+    .presidencytitle{
+        max-width: 280px;
+        font-size: 32px;
+    }
+
+    .presidencyp{
+        max-width: 280px;
+        font-size: 20px;
+    }
+    .orgaimg{
+        width: 280px;
+        height: 280px;
+        outline: 4px solid #50ABE7;
+    }
+    .orgatitle{
+        max-width: 280px;
+    }
+    .header{
+        height: 18100px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .header{
+        height: 16700px;
+    }
+    .orgamaintitle{
+        font-size: 28px;
+    }
+    .presidencyimage {
+        width: 250px;
+        height: 250px;
+    }
+    .presidencytitle{
+        max-width: 250px;
+        font-size: 30px;
+    }
+
+    .presidencyp{
+        max-width: 250px;
+        font-size: 18px;
+    }
+    .orgaimg{
+        width: 250px;
+        height: 250px;
+        outline: 4px solid #50ABE7;
+    }
+    .orgatitle{
+        max-width: 250px;
+    }
 }
