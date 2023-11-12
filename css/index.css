@@ -354,7 +354,7 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 30px;
+	padding: 10px 10px;
 	width: 100%;
 }
 
@@ -617,7 +617,7 @@ body{
 		font-size: 23px;
 	}
 	.titlediv.open{
-		padding: 10px 40px;
+		padding: 10px 10px;
 	}
 	.motto{
 		font-size: 35px;
@@ -672,7 +672,7 @@ body{
 		max-width: 50px;
 	}
 	.titlediv.open{
-		padding: 10px 30px;
+		padding: 10px 10px;
 	}
 	.motto{
 		font-size: 30px;
@@ -703,7 +703,7 @@ body{
 		max-width: 45px;
 	}
 	.titlediv.open{
-		padding: 10px 15px;
+		padding: 10px 10px;
 	}
 	.motto{
 		font-size: 25px;
