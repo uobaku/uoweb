@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ushaglarimiza Oyredek</title>
+    <title>Ushaqlarimiza Oyredek</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +14,59 @@
 </head>
 <body>
     <div class="header">
-        <div class="headerbar">
-            <div class="titlediv">
+        <div class="headerbar" id="headerBar">
+            <div class="titlediv" id="titlediv">
                 <img src="img/logo.png" class="logoheader"></img>
                 <h1 class="title">Uşaqlarımıza Öyrədək</h1>
             </div>
             <div class="navbar">
+                <div class="menu-btn" id="menuBtn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <div class="dropdown">
                     <button href="index.html" id="homebtn" class="dropbtn">Home</button>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn yes">About Us</button>
+                    <button class="dropbtn yes des">About Us</button>
+                    <button class="dropbtn mob">About</button>
                     <div class="dropdown-content">
                         <a href="team.html">Our team</a>
                         <a href="story.html">Our story</a>
                     </div>
                 </div>
+                <div class="dropdownmob">
+                    <button class="dropbtn" id="homebtn">Home</button>
+                </div>
+                <div class="dropdownmob">
+                    <button class="dropbtn" id="ourteambtn">Our team</button>
+                </div>
+                <div class="dropdownmob">
+                    <button class="dropbtn" id="ourstorybtn">Our story</button>
+                </div>
                 <div class="dropdown">
-                    <button class="dropbtn yes">Events</button>
+                    <button class="dropbtn yes des">Events</button>
+                    <button class="dropbtn mob">Events</button>
                     <div class="dropdown-content">
                         <a href="hosted.html">Hosted</a>
                         <a href="planned.html">Planned</a>
                     </div>
                 </div>
+                <div class="dropdownmob">
+                    <button class="dropbtn" id="hstevntbtn">Hosted Events</button>
+                </div>
+                <div class="dropdownmob">
+                    <button class="dropbtn" id="prtbtn">Partners</button>
+                </div>
+                <div class="dropdownmob">
+                    <button class="dropbtn">Contact</button>
+                </div>
                 <div class="dropdown">
                     <button class="dropbtn" id="prtbtn">Partners</button>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Contact</button>
+                    <button class="dropbtn con">Contact</button>
                 </div>
             </div>
         </div>
@@ -172,16 +197,16 @@
                     <h2 class="orgatitle">Abuzer Abbasova (head)</h2>
                 </div>
                 <div class="person">
+                    <img src="img/aylin_i.jpg" class="orgaimg"></img>
+                    <h2 class="orgatitle">Aylin Ibrahimli (deputy head)</h2>
+                </div>
+                <div class="person">
                     <img src="img/kanan.jpeg" class="orgaimg"></img>
                     <h2 class="orgatitle">Kanan Babayev</h2>
                 </div>
                 <div class="person">
                     <img src="img/melek.jpeg" class="orgaimg"></img>
                     <h2 class="orgatitle">Melek Babazade</h2>
-                </div>
-                <div class="person">
-                    <img src="img/aylin_i.jpg" class="orgaimg"></img>
-                    <h2 class="orgatitle">Aylin Ibrahimli</h2>
                 </div>
                 <div class="person">
                     <img src="img/beyaz.jpeg" class="orgaimg"></img>
@@ -273,6 +298,7 @@
         </div>
         <div class="line"></div>
         <p class="copyright">© 2023 "Uşaqlarımıza Öyrədək" non-profit organization. All rights reserved.</p>
+        <p class="copyrightshort">© 2023 UO. All rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
 </body>
