@@ -185,13 +185,13 @@ body{
         max-width: 280px;
     }
     .header{
-        height: 18100px;
+        height: 18200px;
     }
 }
 
 @media screen and (max-width: 330px){
     .header{
-        height: 16700px;
+        height: 16800px;
     }
     .orgamaintitle{
         font-size: 28px;
