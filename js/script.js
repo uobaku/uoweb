@@ -1,10 +1,13 @@
+
 document.getElementById("homebtn").addEventListener("click", function() {
     location.href = "index.html"
 });
 
-document.getElementById("hmbtn").addEventListener("click", function() {
-    location.href = "index.html"
-});
+if (document.getElementById("hmbtn")!=null){
+    document.getElementById("hmbtn").addEventListener("click", function() {
+        location.href = "index.html"
+    });
+}
 
 document.getElementById("insta").addEventListener("click", function() {
     location.href = "https://www.instagram.com/ushaqlarimizaoyredek/"
@@ -18,14 +21,17 @@ document.getElementById("linkedin").addEventListener("click", function() {
     location.href = "https://www.linkedin.com/in/ushaqlarimiza-oyredek-2b9051296/"
 });
 
-document.getElementById("prtbtn").addEventListener("click", function() {
-    location.href = "partners.html"
-});
+if (document.getElementById("prtbtn")!=null){
+    document.getElementById("prtbtn").addEventListener("click", function() {
+        location.href = "partners.html"
+    });
+}
 
 document.getElementById("partner").addEventListener("click", function() {
     location.href = "partners.html"
 });
 
+    
 document.getElementById("hstevntbtn").addEventListener("click", function() {
     location.href = "hosted.html"
 });
