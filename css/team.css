@@ -137,7 +137,7 @@ body{
         height: 340px;
     }
     .header{
-        height: 21000px;
+        height: 21200px;
     }
     .presidencytitle{
         max-width: 340px;
@@ -185,13 +185,13 @@ body{
         max-width: 280px;
     }
     .header{
-        height: 18200px;
+        height: 18400px;
     }
 }
 
 @media screen and (max-width: 330px){
     .header{
-        height: 16800px;
+        height: 17000px;
     }
     .orgamaintitle{
         font-size: 28px;
