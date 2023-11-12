@@ -2,6 +2,10 @@ document.getElementById("homebtn").addEventListener("click", function() {
     location.href = "index.html"
 });
 
+document.getElementById("hmbtn").addEventListener("click", function() {
+    location.href = "index.html"
+});
+
 document.getElementById("insta").addEventListener("click", function() {
     location.href = "https://www.instagram.com/ushaqlarimizaoyredek/"
 });
