@@ -62,6 +62,31 @@ body{
 	margin-left: 10px;
 }
 
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-btn.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .navbar {
     display: flex; 
     justify-content: center; 
@@ -177,7 +202,7 @@ body{
 .dropdown {
     position: relative;
     display: inline-block; 
-    margin: 0 40px;
+    margin: 0 2.5vw;
 }
 
 .dropdown .dropbtn {
@@ -245,6 +270,11 @@ body{
 	height: calc(100vh - 100px);
 }
 
+.headerimg.open{
+	background-image: url(../img/header.png);
+	height: calc(100vh - 430px);
+}
+
 .partnersspec{
 	padding-top: 40px;
 }
@@ -279,7 +309,17 @@ body{
 	top: 0;
 	width: 100%;
 	display: flex;
+	justify-items: space-between;
 	flex-direction: row;
+}
+
+.headerbar.open{
+	background-color: #50ABE7;
+	color: #fff;
+	height: 430px;
+	top: 0;
+	width: 100%;
+	flex-direction: column;
 }
 
 .motto{
@@ -308,6 +348,16 @@ body{
 	width: 40%;
 }
 
+.titlediv.open{
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 100px;
+	width: 100%;
+}
+
 .logoheader{
 	max-width: 80px;
 	max-height: 80px;
@@ -326,9 +376,21 @@ body{
     padding: 0 10px;
 }
 
+
 .smimg {
     width: 45px; 
     height: auto; 
+}
+
+.dropdownmob{
+    display: none;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
 }
 
 .footer {
@@ -343,6 +405,315 @@ body{
 	justify-content: center;
 }
 
+.copyrightshort{
+	display: none;
+}
+
 .copyright{
+	display: block;
     margin-bottom: 10px;
+}
+
+.des{
+	display: block;
+}
+
+.mob{
+	display: none;
+}
+
+.con{
+	display: block;
+}
+
+@media screen and (max-width: 1400px){
+	.actiontitle{
+		font-size: 44px;
+		padding: 4vh 0;
+	}
+	.goaltitle{
+		font-size: 44px;
+		padding: 4vh 0;
+	}
+	.donatebtn{
+		width: 190px;
+		font-size: 17px;
+	}
+	.motto{
+		font-size: 55px;
+	}
+	.navbar .yes::after {
+    content: ""; }
+    .actionname{
+		font-size: 28px;
+	}
+    .goalname{
+		font-size: 28px;
+	}
+	.actiondesc{
+		font-size: 22px;
+	}
+
+	.element-with-line{
+		height: 130px;
+	}
+	.element-with-line.blue{
+		height: 130px;
+	}
+}
+
+
+@media screen and (max-width: 1351px){
+    .des{
+    	display: none;
+    }
+    .mob{
+    	display: block;
+    }
+}
+
+
+@media screen and (max-width: 1109px) and (min-width: 769px){
+	.element-with-line{
+		height: 120px;
+	}
+	.element-with-line.blue{
+		height: 120px;
+	}
+	.actionname{
+		font-size: 26px;
+	}
+	.goalname{
+		font-size: 26px;
+	}
+	.titlediv{
+		width: 47%;
+	}
+	.navbar{
+	    padding-left: 0px;
+
+	}
+	.navbar .yes::after {
+    content: ""; }
+    .des{
+    	display: none;
+    }
+    .mob{
+    	display: block;
+    }
+    .con{
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+	.copyright{
+		display: none;
+	}
+	.copyrightshort{
+		display: block;
+	}
+	.actiondesc{
+		font-size: 25px;
+		width: 100%;
+		text-align: center;
+	}
+	.actionname{
+		font-size: 30px;
+		width: 100%;
+		text-align: center;
+	}
+	.goalname{
+		font-size: 30px;
+		width: 100%;
+		text-align: center;	
+	}
+	.element-with-line{
+		height: 80px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.element-with-line.blue{
+		height: 100px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.goals{
+		height: 900px;
+	}
+	.actions{
+		height: 960px;
+	}
+	.actionssection{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+	}
+	.title{
+		font-size: 25px;
+	}
+	.logoheader{
+		max-width: 60px;
+	}
+	.actiontitle{
+		font-size: 35px;
+		padding-top: 3vh;
+		padding-bottom: 6vh;
+	}
+	.goaltitle{
+		font-size: 35px;
+		padding-top: 3vh;
+		padding-bottom: 6vh;
+	}
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .motto{
+    	font-size: 40px;
+    }
+
+    .titlediv{
+    	width: 90%;
+    	padding: 0 20px;
+    }
+
+    .dropdown {
+        display: none;
+        width: 100%;
+    }
+
+    .dropdownmob {
+        width: 100%;
+        text-align: center;    	
+    }
+
+    .dropbtn{
+	   	font-size: 22px;
+	   	padding: 10px 0;
+		border: none;
+		outline: none;
+		color: white;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 423px){
+	.title{
+		font-size: 23px;
+	}
+	.titlediv.open{
+		padding: 10px 40px;
+	}
+	.motto{
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	.donatebtn{
+		width: 150px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 380px){
+    .dropbtn{
+	   	font-size: 19px;
+	   	padding: 9px 0;
+		border: none;
+		outline: none;
+		color: white;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+    }
+    .headerimg.open{
+		background-image: url(../img/header.png);
+		height: calc(100vh - 395px);
+	}
+    .headerbar.open{
+    	height: 395px;
+    }
+
+	.actiondesc{
+		font-size: 22px;
+		width: 100%;
+		text-align: center;
+	}
+	.actionname{
+		font-size: 27px;
+		width: 100%;
+		text-align: center;
+	}
+	.goalname{
+		font-size: 27px;
+		width: 100%;
+		text-align: center;	
+	}
+	.title{
+		font-size: 21px;
+	}
+	.logoheader{
+		max-width: 50px;
+	}
+	.titlediv.open{
+		padding: 10px 30px;
+	}
+	.motto{
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+	.smimg{
+		width: 40px;
+	}
+	.line::before {
+	  content: "";
+	  display: block;
+	  width: 150px; 
+	}
+	.copyright{
+		display: none;
+	}
+	.copyrightshort{
+		display: block;
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.title{
+		font-size: 20px;
+	}
+	.logoheader{
+		max-width: 45px;
+	}
+	.titlediv.open{
+		padding: 10px 15px;
+	}
+	.motto{
+		font-size: 25px;
+		margin-bottom: 9px;
+	}
+	.donatebtn{
+		width: 130px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		font-size: 13px;
+	}
+
 }
