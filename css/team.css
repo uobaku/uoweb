@@ -7,7 +7,7 @@
 body{
     width: 100%;
     position: relative;
-	font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .partnerimg{
@@ -138,7 +138,7 @@ body{
         height: 340px;
     }
     .header{
-        height: 21200px;
+        height: 21610px;
     }
     .presidencytitle{
         max-width: 340px;
@@ -186,13 +186,13 @@ body{
         max-width: 280px;
     }
     .header{
-        height: 18400px;
+        height: 18750px;
     }
 }
 
 @media screen and (max-width: 330px){
     .header{
-        height: 17000px;
+        height: 17320px;
     }
     .orgamaintitle{
         font-size: 28px;
