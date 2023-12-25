@@ -18,7 +18,7 @@
 	justify-content: left;
 	align-items: center;
 	width: 100%;
-	padding: 3vh 3vw;
+	padding: 20px 3vw;
 	background-color: #edf7fc;
 	margin-bottom: 30px;
 }
@@ -26,7 +26,7 @@
 .eventtitle{
 	font-size: 33px;
 	color: #2b99e3;
-	padding: 1vh 0;
+	padding: 10px 0;
 }
 
 .eventimg{
@@ -38,4 +38,14 @@
 .eventp{
 	font-size: 22px;
 	color: #2b99e3;
+}
+
+@media screen and (max-width: 800px){
+	.event{
+		display: flex;
+		flex-direction: column;
+	}
+	.header.hosted{
+		height: 5500px;
+	}
 }
