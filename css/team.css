@@ -1,224 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    width: 100%;
-    position: relative;
+/* Override some Bootstrap styles */
+html {
     font-family: 'Playfair Display', serif;
 }
 
-.partnerimg{
-    width: 300px;
+.logoheader {
+    width: 50px;
+}
+
+.text-primary {
+    color: #2b99e3 !important;
+}
+
+.card-img-top {
     height: 300px;
-    margin-left: 40px;
-    outline: 5px solid #50ABE7;
+    object-fit: cover;
 }
 
-.partnerstitle{
-    padding: 40px 0;
-    text-align: center;
-    font-size: 42px;
-    color: #2b99e3;
-}
-
-.presidencytitle{
-    max-width: 400px;
-    text-align: center;
-    font-size: 32px;
-    color: #2b99e3;
-}
-
-.presidencyp{
-    max-width: 400px;
-    text-align: center;
-    font-size: 20px;
-    color: #2b99e3;
-}
-
-.teamtitle{
-    color: #2b99e3;
-    font-size: 40px;
-    padding: 30px;
-}
-
-.orgamaintitle{
-    color: #2b99e3;
-    font-size: 40px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.header{
-    background-color: #d6efff;
-    height: 8150px;
-
-}
-
-.header.partners{
-    background-color: #d6efff;
-    height: 2500px
-}
-
-.personpres{
-    padding: 5px 5vw;
-}
-
-.person{
-    padding: 25px 35px;
-}
-
-.presidencyimage{
-    width: 400px;
-    height: 400px;
-    outline: 4px solid #50ABE7;
-}
-
-.orgaimg{
-    width: 350px;
-    height: 350px;
-    outline: 4px solid #50ABE7;
-}
-
-.orgatitle{
-    max-width: 350px;
-    text-align: center;
-    font-size: 25px;
-    color: #2b99e3;
+footer .btn {
+    padding: 5px;
+    border-radius: 50%;
 }
 
 
-.presidency{
-    display: flex;
-    flex-direction: row;
+.section {
+    margin-top: 70px; /* Adjust for navbar */
+    padding: 60px 0;
 }
 
-.organizational{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.maindiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.team {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-@media screen and (max-width: 768px){
-    .header.partners{
-        height: 5000px;
-    }
-    .orgamaintitle{
-        font-size: 34px;
-    }
-    .personpres{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0;
-    }
-    .organizational{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .presidency{
-        flex-direction: column;
-    }
-    .presidencyimage {
-        width: 340px;
-        height: 340px;
-    }
-    .header{
-        height: 21610px;
-    }
-    .presidencytitle{
-        max-width: 340px;
-        font-size: 32px;
-    }
-
-    .presidencyp{
-        max-width: 340px;
-        font-size: 20px;
-    }
-    .orgaimg{
-        width: 340px;
-        height: 340px;
-        outline: 4px solid #50ABE7;
-    }
-    .orgatitle{
-        max-width: 340px;
-    }
-
-}
-
-@media screen and (max-width: 380px){
-    .orgamaintitle{
-        font-size: 30px;
-    }
-    .presidencyimage {
-        width: 280px;
-        height: 280px;
-    }
-    .presidencytitle{
-        max-width: 280px;
-        font-size: 32px;
-    }
-
-    .presidencyp{
-        max-width: 280px;
-        font-size: 20px;
-    }
-    .orgaimg{
-        width: 280px;
-        height: 280px;
-        outline: 4px solid #50ABE7;
-    }
-    .orgatitle{
-        max-width: 280px;
-    }
-    .header{
-        height: 18750px;
-    }
-}
-
-@media screen and (max-width: 330px){
-    .header{
-        height: 17320px;
-    }
-    .orgamaintitle{
-        font-size: 28px;
-    }
-    .presidencyimage {
-        width: 250px;
-        height: 250px;
-    }
-    .presidencytitle{
-        max-width: 250px;
-        font-size: 30px;
-    }
-
-    .presidencyp{
-        max-width: 250px;
-        font-size: 18px;
-    }
-    .orgaimg{
-        width: 250px;
-        height: 250px;
-        outline: 4px solid #50ABE7;
-    }
-    .orgatitle{
-        max-width: 250px;
-    }
+.card {
+    margin-bottom: 20px;
 }

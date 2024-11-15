@@ -1,0 +1,54 @@
+html {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    background-color: #f7f7f7;
+    padding-top: 70px; /* Adjust based on navbar height to prevent content overlap */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Makes the navbar fixed at the top */
+    top: 0; /* Ensures it stays at the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    padding: 10px 0; /* Optional: Adjusts navbar padding */
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.footer-section {
+    background-color: #51abe7;  /* Change this line */
+    text-align: center;
+    padding: 0 0;
+    color: white;
+}
+
+
+/* Smooth transition effect when image is clicked */
+.eventimg {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adds a zoom-in effect on hover */
+}
+
+.eventimg:hover {
+    transform: scale(1.02); /* Zoom effect when the image is hovered */
+}

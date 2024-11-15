@@ -1,51 +1,51 @@
-.hosted{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	background-color: #d6efff;
+/* Event Styling */
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px 3vw;
+    background-color: #edf7fc;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Optional: rounded corners for better visuals */
 }
 
-.header.hosted{
-	height: 4000px;
+.eventtitle {
+    font-size: 33px;
+    color: #2b99e3;
+    padding: 10px 0;
+    font-weight: 600; /* Adds boldness to the title */
 }
 
-.event{
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
-	width: 100%;
-	padding: 20px 3vw;
-	background-color: #edf7fc;
-	margin-bottom: 30px;
+.eventimg {
+    max-width: 320px;
+    margin-right: 20px;
+    outline: 4px solid #50ABE7;
+    border-radius: 8px; /* Optional: rounded corners for the image */
 }
 
-.eventtitle{
-	font-size: 33px;
-	color: #2b99e3;
-	padding: 10px 0;
+.eventp {
+    font-size: 22px;
+    color: #2b99e3;
+    line-height: 1.6; /* Makes the text more readable by adding space between lines */
+    text-align: justify; /* Justify the text for better alignment */
 }
 
-.eventimg{
-	max-width: 320px;
-	margin-right: 20px;
-	outline: 4px solid #50ABE7;
-}
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 800px) {
+    .event {
+        flex-direction: column; /* Stacks the image and text on smaller screens */
+        text-align: center; /* Centers the content on small screens */
+        padding: 20px 10px; /* Adjusts the padding for smaller screens */
+    }
 
-.eventp{
-	font-size: 22px;
-	color: #2b99e3;
-}
+    .eventimg {
+        max-width: 100%; /* Makes the image responsive and take up the full width on small screens */
+        margin-bottom: 15px; /* Adds spacing between the image and text */
+    }
 
-@media screen and (max-width: 800px){
-	.event{
-		display: flex;
-		flex-direction: column;
-	}
-	.header.hosted{
-		height: 5500px;
-	}
+    .header.hosted {
+        height: auto; /* Adjusts height for smaller screens */
+    }
 }
