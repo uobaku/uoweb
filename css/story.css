@@ -1,43 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Global Styles */
+html {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    background-color: #f7f7f7;
+    padding-top: 70px; /* Adjust based on navbar height to prevent content overlap */
 }
 
-body{
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    position: relative;
-	font-family: 'Playfair Display', serif;
+    z-index: 1000;
+    background-color: #51abe7;  /* Updated background color */
 }
 
-.header{
-    background-color: #d6efff;
-}
-
-.story{
+/* Story Section Styles */
+.story {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    padding-top: 80px;
+    background-color: #d6efff;
+    padding-bottom: 50px;
+    flex-direction: row; /* Default direction for larger screens (image left, text right) */
+    gap: 20px; /* Adds space between image and text */
 }
 
-.storyimg{
-    background-image: url("../img/storyimg.jpeg");
-    width: 60%;
-    margin-left: 5%;
-    margin-bottom: 7%;
-    height: 80%;
-    outline: 7px solid #50ABE7;
+/* Story Image Styling */
+.storyimg {
+    width: 100%;
+    max-width: 600px; /* Limits image size */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #50ABE7;
 }
 
-.storytext{
-    width: 40%;
+/* Story Text Styling */
+.storytext {
+    width: 100%;
+    max-width: 800px; /* Limits text width */
     color: #2b99e3;
     font-size: 20px;
     padding: 0 5%;
-    height: 90%;
 }
 
+/* Mobile-specific Styling */
+@media (max-width: 768px) {
+    .story {
+        flex-direction: column; /* Stack the image and text vertically on smaller screens */
+        text-align: center; /* Center-align text */
+        gap: 20px; /* Space between image and text */
+    }
+
+    .storyimg {
+        width: 100%; /* Image takes up the full width available */
+        max-width: 100%; /* Prevent image from exceeding container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .storytext {
+        width: 100%; /* Text takes full width on mobile */
+        font-size: 18px; /* Slightly smaller font size on mobile */
+        padding: 0 15px; /* Add some padding for better spacing */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #51abe7;  /* Footer color updated to match the navbar */
+    color: white;
+}

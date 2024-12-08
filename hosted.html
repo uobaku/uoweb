@@ -4,185 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ushaglarimiza Oyredek</title>
+    <title>Uşaqlarımıza Öyrədək</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic+Coding:wght@700&family=Nunito:wght@800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic+Coding:wght@700&family=Nunito:wght@800&family=Playfair+Display:wght@700&display=swap"
+            rel="stylesheet">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/hosted.css">
-
+    <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-    <div class="header hosted">
-        <div class="headerbar">
-            <div class="titlediv">
-                <img src="img/logo.png" class="logoheader"></img>
-                <h1 class="title">Uşaqlarımıza Öyrədək</h1>
+    <!-- Header (order unchanged) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="index.html">
+                    <img src="img/logo.png" alt="Logo" class="me-2" style="width: 40px;"> Uşaqlarımıza Öyrədək
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="aboutDropdown" role="button">About Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="story.html">Our Story</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="eventsDropdown" role="button">Events</a>
+                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                <li><a class="dropdown-item" href="hosted.html">Hosted</a></li>
+                                <li><a class="dropdown-item" href="planned.html">Planned</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="partners.html">Partners</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar">
-                <div class="dropdown">
-                    <button href="index.html" id="homebtn" class="dropbtn">Home</button>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn yes">About Us</button>
-                    <div class="dropdown-content">
-                        <a href="team.html">Our team</a>
-                        <a href="story.html">Our story</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn yes">Events</button>
-                    <div class="dropdown-content">
-                        <a href="hosted.html">Hosted</a>
-                        <a href="planned.html">Planned</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn" id="partner">Partners</button>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Contact</button>
-                </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <!-- Hosted Events Section -->
+    <section class="hosted">
+        <div class="event">
+            <img src="img/yelobankevent.jpeg" class="eventimg" alt="YeloBank English Workshop">
+            <div class="eventdesc">
+                <h2 class="eventtitle">YeloBank English Workshop</h2>
+                <p class="eventp">Our first event took place at the Yelobank Head Office on August 4, 2023. The event featured a combination of social and educational activities designed to engage children with limited abilities. Moreover, the event included English workshops aimed at enhancing language skills and fostering a welcoming learning environment.</p>
             </div>
         </div>
 
-        <div class="hosted">
-
-            <div class="event">
-                <img src="img/yelobankevent.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">YeloBank English Workshop</h2>
-                    <p class="eventp">Our first event took place at the Yelobank Head Office on August 4, 2023. The event featured a combination of social and educational activities designed to engage children with limited abilities. Moreover, the event included English workshops aimed at enhancung language skills and fostering a welcoming learning environment.</p>
-                </div>
+        <div class="event">
+            <img src="img/isopsevent.jpeg" class="eventimg" alt="ISOPS Summer Camp">
+            <div class="eventdesc">
+                <h2 class="eventtitle">ISOPS Summer Camp</h2>
+                <p class="eventp">Our ISOPS Camp Event was organized in collaboration with the Bilgah Beach Hotel and ISOPS Summer Schools, held in the summer camp on August 22, 2023. The event incorporated various social activities focusing on architecture and creative art. We offered master classes and mentoring sessions for the children in attendance, in order to enrich their camp experience.</p>
             </div>
-
-            <div class="event">
-                <img src="img/isopsevent.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">ISOPS Summer Camp</h2>
-                    <p class="eventp">Our ISOPS Camp Event was organized in collaboration with the Bilgah Beach Hotel and ISOPS Summer Schools, held in the summer camp on August 22, 2023. The event incorporated various social activities focusing on architecture and creative art. We offered master classes and mentoring sessions for the children in attendance, in order to enrich their camp experience.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/ecotech.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">EcoTech Exhibition</h2>
-                    <p class="eventp">Our third event, Ecotech, held on September 9, 2023, at the prestigious Landmark Rotunda Hall, was a result of collaborative effort between Usaqlarimiza Oyredej and Ecotech teams. The event showcased a thematic exhibition  centered on ecology and technology, featuring projects of participants spanning various age groups.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/etns.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">ETSN Event</h2>
-                    <p class="eventp">Held on October 7th in Shirvan Milli Park with the support of the Ministry of Ecology and Natural Resources of Azerbaijan, Usaqlarimiza Oyredek held an event dedicated to the importance of ecology, which we have achieved through eco masterclasses with underprivileged children. </p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/autizm.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">The Autizmabid</h2>
-                    <p class="eventp">The Autizmadib Event aims to nurture the creative potential of children with limited abilities of all age groups and all regions of our precious Republic of Azerbaijan. Our aspiration is to pave the way for a brighter future for these exceptional children, giving them opportunities they did not have.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/karabakh.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Rebuild Karabakh Event</h2>
-                    <p class="eventp">Our 6th event, known as the Rebuild Karabakh Expo, was made possible through the support of Umid Var and the Caspian Event Organizers Group (CEO Group). The event encouraged support for underprivileged and disabled children from multiple regions of our beloved Republic of Azerbaijan. </p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/azercellevent.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Azercell Massali Event</h2>
-                    <p class="eventp">The Azercell Masalli Event was a significant initiative made possible through collaboration with Azercell Telecom LLC in the Masalli region of the Republic of Azerbaijan. This event held special significance as it payed homagr to martyrs and their families whilst delving into the rich history of the Karabakh region. </p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/medinexpo.jpeg" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Medinex Exhibition</h2>
-                    <p class="eventp">One of our recent events, "Medinex" exhibition took place at the Baku Expo Center from November 2 to 4, 2023. The event’s primary objective was to provide children from several regions of the Republic of Azerbaijan with limited abilities of all ages with a platform that showcase and recognize their art and exhibits.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/bookfairr.png" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Baku International Book Fair Expo</h2>
-                    <p class="eventp">Our organization proudly participated in the Baku Book Fair, on November 11-15, with  the invaluable support of Umid Var. At this event, we placed a special emphasis on children with limited abilities. Event was organized with support of Ministry of Culture of the Republic of Azerbaijan</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/fundraiser.png" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Landau Fundraiser</h2>
-                    <p class="eventp">The Landau School Fundraiser, held on November 20th, focused on selling our unique merchandise, raising funds to support the children of Azerbaijan.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/teambuildingg.png" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">UO Teambuilding</h2>
-                    <p class="eventp">Team Building of Ushaqlarimiza Oyredek Team in Fusion Hub Restaurant, on December 29th dedicated to the New Year Celebration and Team qualification.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/wscc.png" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">World Scholar's Cup</h2>
-                    <p class="eventp">We proudly represented our Organization at the World Scholar’s Cup and got support from both the European Azerbaijan School and WSC Organizational Team for future events, we successfully organized a media campaign and gave out our merchandise to participants of WSC.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/bakudecides.png" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Baku Decides</h2>
-                    <p class="eventp">Our President and Head Organizer proudly represented Ushaqlarimiza Oyredek at “Baku Decides” 1st Youth Climate Negotiations, where they observed talks of international delegations and the UN. We got supported by more than 5 country delegations and 17 organizations, including Minister of Youth and Sports as well as Minister of Environment and Natural Resources of the Republic of Azerbaijan. Conference was 4 days long from January 29th till February 1st and it was the first step to COP29.</p>
-                </div>
-            </div>
-
-            <div class="event">
-                <img src="img/h4g.png" class="eventimg"></img>
-                <div class="eventdesc">
-                    <h2 class="eventtitle">Hack4Good Hackathon</h2>
-                    <p class="eventp">H4G Charity Hackathon was organized by the team of Hack4Good on February 3rd, 2024. Our volunteers helped with the event, where students from various schools represented their IT and AI based projects at Landau School and we’re qualified for several nominations.</p>
-                </div>
-            </div>
-
-
-
         </div>
+
+        <div class="event">
+            <img src="img/ecotech.jpeg" class="eventimg" alt="EcoTech Exhibition">
+            <div class="eventdesc">
+                <h2 class="eventtitle">EcoTech Exhibition</h2>
+                <p class="eventp">Our third event, Ecotech, held on September 9, 2023, at the prestigious Landmark Rotunda Hall, was a result of a collaborative effort between Uşaqlarımıza Öyrədək and Ecotech teams. The event showcased a thematic exhibition centered on ecology and technology, featuring projects of participants spanning various age groups.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/etns.jpeg" class="eventimg" alt="ETSN Event">
+            <div class="eventdesc">
+                <h2 class="eventtitle">ETSN Event</h2>
+                <p class="eventp">Held on October 7th in Shirvan Milli Park with the support of the Ministry of Ecology and Natural Resources of Azerbaijan, Uşaqlarımıza Öyrədək held an event dedicated to the importance of ecology, which we have achieved through eco masterclasses with underprivileged children.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/autizm.jpeg" class="eventimg" alt="The Autizmabid">
+            <div class="eventdesc">
+                <h2 class="eventtitle">The Autizmabid</h2>
+                <p class="eventp">The Autizmabid Event aims to nurture the creative potential of children with limited abilities of all age groups and all regions of our precious Republic of Azerbaijan. Our aspiration is to pave the way for a brighter future for these exceptional children, giving them opportunities they did not have.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/karabakh.jpeg" class="eventimg" alt="Rebuild Karabakh Event">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Rebuild Karabakh Event</h2>
+                <p class="eventp">Our 6th event, known as the Rebuild Karabakh Expo, was made possible through the support of Umid Var and the Caspian Event Organizers Group (CEO Group). The event encouraged support for underprivileged and disabled children from multiple regions of our beloved Republic of Azerbaijan.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/azercellevent.jpeg" class="eventimg" alt="Azercell Massali Event">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Azercell Massali Event</h2>
+                <p class="eventp">The Azercell Masalli Event was a significant initiative made possible through collaboration with Azercell Telecom LLC in the Masalli region of the Republic of Azerbaijan. This event held special significance as it paid homage to martyrs and their families whilst delving into the rich history of the Karabakh region.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/medinexpo.jpeg" class="eventimg" alt="Medinex Exhibition">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Medinex Exhibition</h2>
+                <p class="eventp">One of our recent events, "Medinex" exhibition took place at the Baku Expo Center from November 2 to 4, 2023. The event’s primary objective was to provide children from several regions of the Republic of Azerbaijan with limited abilities of all ages with a platform that showcased and recognized their art and exhibits.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/bookfairr.png" class="eventimg" alt="Baku International Book Fair Expo">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Baku International Book Fair Expo</h2>
+                <p class="eventp">Our organization proudly participated in the Baku Book Fair, on November 11-15, with the invaluable support of Umid Var. At this event, we placed a special emphasis on children with limited abilities. The event was organized with the support of the Ministry of Culture of the Republic of Azerbaijan.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/fundraiser.png" class="eventimg" alt="Landau Fundraiser">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Landau Fundraiser</h2>
+                <p class="eventp">The Landau Fundraiser event was hosted on the prestigious premises of Landau Real Estate and brings us closer to supporting local underprivileged children from across Azerbaijan in a charity-filled atmosphere. It was one of our most crucial events, with the goal of providing tangible support to children in need.</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="img/teambuilding.png" class="eventimg" alt="UO Teambuilding">
+            <div class="eventdesc">
+                <h2 class="eventtitle">UO Teambuilding</h2>
+                <p class="eventp">Team Building of Uşaqlarımıza Öyrədək Team in Fusion Hub Restaurant, on December 29th dedicated to the New Year Celebration and Team qualification.</p>
+            </div>
+        </div>
+    
+        <div class="event">
+            <img src="img/wscc.png" class="eventimg" alt="World Scholar's Cup">
+            <div class="eventdesc">
+                <h2 class="eventtitle">World Scholar's Cup</h2>
+                <p class="eventp">We proudly represented our Organization at the World Scholar’s Cup and got support from both the European Azerbaijan School and WSC Organizational Team for future events, we successfully organized a media campaign and gave out our merchandise to participants of WSC.</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="img/bakudecides.png" class="eventimg" alt="Baku Decides">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Baku Decides</h2>
+                <p class="eventp">Our President and Head Organizer proudly represented Uşaqlarımıza Öyrədək at “Baku Decides” 1st Youth Climate Negotiations, where they observed talks of international delegations and the UN. We got supported by more than 5 country delegations and 17 organizations, including the Minister of Youth and Sports and the Minister of Environment and Natural Resources of the Republic of Azerbaijan. The conference lasted 4 days from January 29th to February 1st, and it was the first step to COP29.</p>
+            </div>
+        </div>
+    
+        <div class="event">
+            <img src="img/h4g.png" class="eventimg" alt="Hack4Good Hackathon">
+            <div class="eventdesc">
+                <h2 class="eventtitle">Hack4Good Hackathon</h2>
+                <p class="eventp">H4G Charity Hackathon was organized by the team of Hack4Good on February 3rd, 2024. Our volunteers helped with the event, where students from various schools represented their IT and AI-based projects at Landau School and were qualified for several nominations.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer-section text-center p-3">
+        <div>
+            <a href="https://www.linkedin.com/in/ushaqlarimiza-oyredek-2b9051296/" class="text-white me-3"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/ushaqlarimizaoyredek/" class="text-white me-3"><i
+                    class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61552572833316" class="text-white me-3"><i
+                    class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.tiktok.com/@ushaqlarimizaoyredek?_t=8h5APnACVo9&_r=1" class="text-white me-3"><i
+                    class="fab fa-tiktok fa-2x"></i></a>
+        </div>
+        <p>© 2023-2024 "Uşaqlarımıza Öyrədək" non-profit society. All rights reserved. Demo by Logman Bayramli</p>
+    </footer>
+
+    <!-- Scroll Arrows -->
+    <div id="scroll-up" class="arrow-btn hidden">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <div id="scroll-down" class="arrow-btn hidden">
+        <i class="fa fa-arrow-down"></i>
     </div>
 
-    <div class="footer">
-        <div class="socialmediadiv">
-            <button class="smbtn" id="linkedin">
-                <img src="img/linked.png" class="smimg">
-            </button>
-            <button class="smbtn" id="insta">
-                <img src="img/insta.png" class="smimg">
-            </button>
-            <button class="smbtn" id="facebook">
-                <img src="img/facebook.png" class="smimg">
-            </button>
-            <button class="smbtn" id="tiktok">
-                <img src="img/tiktok.png" class="smimg">
-            </button>
-        </div>
-        <div class="line"></div>
-        <p class="copyright">© 2023 "Uşaqlarımıza Öyrədək" non-profit organization. All rights reserved.</p>
-    </div>
-    <script src="js/script.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+</html>

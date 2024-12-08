@@ -1,719 +1,260 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    width: 100%;
-    position: relative;
-	font-family: 'Playfair Display', serif;
-}
-
-.label{
-	color: #2b99e3;
-	font-size: 26px;
-}
-
-.contactformdiv{
-	height: 100%;
-}
-
-.form{
-	display: flex;
-	flex-direction: row;
-	padding: 10px 0;
-}
-
-.input{
-	width: 400px;
-	font-size: 22px;
-	border: 0;
-}
-
-.textarea{
-	width: 400px;
-	border: 0;
-	font-size: 22px;
-}
-
-.donatebtn{
-	width: 220px;
-	font-size: 19px;
-	background-color: #50ABE7;
-	text-decoration: none;
-	padding-top: 20px;
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	align-text: center;
-	padding-bottom: 20px;
-	color: white;
-}
+/* Global Styles */
 
 
-.donatebtn:hover{
-	background-color: #148fe0;
-}
-
-.title{
-	width: 660px;
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-.menu-btn {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.menu-btn.open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-btn.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-btn.open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-.navbar {
-    display: flex; 
-    justify-content: center; 
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #50ABE7;
-    padding-left: 50px;
-}
-
-.navbar a {
-    font-size: 16px;
-    color: white;
     text-align: center;
-    padding: 14px 16px; 
-    text-decoration: none;
-    cursor: pointer;
+    height: 100vh;
     position: relative;
-}
-
-.navbar button {
-    cursor: pointer;
-}
-
-.logo{
-	max-width: 120px;
-}
-
-.actions{
-	height: 45vh;
-	background-color: #50ABE7;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.goals{
-	height: 45vh;
-	background-color: #d6efff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.actionssection{
-    display: flex;
-    align-items: center;
-    height: 40%;
-    flex-direction: row;
-
-}
-
-.goaltitle{
-	font-size: 50px;
-	padding: 5vh 0;
-	color: #50ABE7;
-}
-
-.goalname{
-	font-size: 34px;
-	color: #50ABE7;
-}
-
-.actionname{
-	font-size: 34px;
-	color: white;
-}
-
-.actiondesc{
-	font-size: 24px;
-	color: white;
-}
-
-.element-with-line {
-  width: 2px; 
-  height: 150px; 
-  background-color: #fff; 
-  margin: 0 20px; 
-}
-
-.element-with-line.blue{
-  width: 2px; 
-  height: 150px; 
-  background-color: #50ABE7; 
-  margin: 0 20px; 
-}
-
-.action{
-	padding: 0 2vw;
-}
-
-.goal{
-	padding: 0 3vw;
-}
-
-.actiontitle{
-	font-size: 50px;
-	padding: 5vh 0;
-	color: white;
-}
-
-
-.navbar .yes::after {
-    content: "▼"; 
-    display: inline-block;
-    		font-size: 14px;
-    margin-left: 5px; 
-    transition: transform 0.3s; 
-}
-
-.navbar .yes:hover::after {
-    transform: rotate(180deg); 
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block; 
-    margin: 0 2.5vw;
-}
-
-.dropdown .dropbtn {
-	font-size: 20px;
-	border: none;
-	outline: none;
-	color: white;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
-}
-
-.dropbtn.fot{
-	padding: 25px 5px;
-	font-size: 23px;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #6CBDE9;
-	min-width: 180px;
-	z-index: 1;
-}
-
-.dropdown-content a {
+    background-image: url('../img/header.png');
+    background-size: cover;
     color: white;
-    font-size: 18px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-
 }
 
-
-.dropdown-content a:hover {
-	background-color: #2da3e3;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.header{
-	height: 100vh;
-	width: 100%;
-}
-
-.header.partner{
-	height: 100vh;
-}
-
-.line::before {
-  content: "";
-  display: block;
-  width: 200px; 
-  height: 4px; 
-  margin-bottom: 13px;
-  background-color: #fff;
-}
-
-.headerimg{
-	background-image: url(../img/header.png);
-	height: calc(100vh - 100px);
-}
-
-.headerimg.open{
-	background-image: url(../img/header.png);
-	height: calc(100vh - 430px);
-}
-
-.partnersspec{
-	padding-top: 40px;
-}
-
-.partnersdiv{
+.hero-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
     flex-direction: column;
-	width: 100%;
-}
-
-.headerimg.planned{
-	background-image: none;
-	background-color: #d6efff;
-
-}
-
-.mottodiv{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    flex-direction: column;
 }
 
-.headerbar {
-	background-color: #50ABE7;
-	color: #fff;
-	height: 100px;
-	top: 0;
-	width: 100%;
-	display: flex;
-	justify-items: space-between;
-	flex-direction: row;
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.headerbar.open{
-	background-color: #50ABE7;
-	color: #fff;
-	height: 430px;
-	top: 0;
-	width: 100%;
-	flex-direction: column;
-}
-
-.motto{
-    color: #fff;
-    font-size: 60px;
-    line-height: 30px;
-    margin-bottom: 30px;
-}
-
-.motto.planned{
-    color: #50ABE7;
-    font-size: 60px;
-    line-height: 30px;
-    margin-bottom: 30px;
-}
-
-
-.titlediv{
-	height: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding-left: 1vw;
-	padding-bottom: 5px;
-	width: 40%;
-}
-
-.titlediv.open{
-	height: 90px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 10px 20px;
-	width: 100%;
-}
-
-.logoheader{
-	max-width: 80px;
-	max-height: 80px;
-}
-
-.socialmediadiv{
-	padding-top: 25px;
-	padding-bottom: 13px;
-}
-
-.smbtn {
-    background: none;
+.btn-donate {
+    padding: 12px 40px;
+    background-color: #ff7f50;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
     border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0 10px;
+    margin-bottom: 40px;
 }
 
-
-.smimg {
-    width: 45px; 
-    height: auto; 
+.mouse-icon {
+    width: 40px;
+    animation: bounce 1.5s infinite;
+    position: relative;
+    bottom: -40px;
 }
 
-.dropdownmob{
-    display: none;
-	font-size: 20px;
-	border: none;
-	outline: none;
-	color: white;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }
 
-.footer {
-	background-color: #50ABE7;
-
-	color: #fff;
-	font-size: 20px;
-	height: 180px;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+/* Our Goals Section Styling */
+#our-goals {
+    background-color: #75bfff; /* More vibrant blue */
+    background: linear-gradient(135deg, #75bfff, #6ac2ff); /* Gradient for more depth */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
 }
 
-.copyrightshort{
-	display: none;
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
-.copyright{
-	display: block;
-    margin-bottom: 10px;
+/* Arrow styling */
+.arrow-container {
+    position: relative;
+    display: inline-block;
 }
 
-.des{
-	display: block;
+.arrow {
+    font-size: 3rem;
+    color: white;
+    position: relative;
 }
 
-.mob{
-	display: none;
+.arrow .fa-arrow-right {
+    font-size: 50px;
 }
 
-.con{
-	display: block;
+/* Circle styling inside the arrow */
+.goals {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
-@media screen and (max-width: 1400px){
-	.actiontitle{
-		font-size: 44px;
-		padding: 4vh 0;
-	}
-	.goaltitle{
-		font-size: 44px;
-		padding: 4vh 0;
-	}
-	.donatebtn{
-		width: 190px;
-		font-size: 17px;
-	}
-	.motto{
-		font-size: 55px;
-	}
-	.navbar .yes::after {
-    content: ""; }
-    .actionname{
-		font-size: 28px;
-	}
-    .goalname{
-		font-size: 28px;
-	}
-	.actiondesc{
-		font-size: 22px;
-	}
-
-	.element-with-line{
-		height: 130px;
-	}
-	.element-with-line.blue{
-		height: 130px;
-	}
+.goal-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;
+    opacity: 0;
+    transform: scale(0);
+    animation: circleAppear 1.5s forwards;
 }
 
-
-@media screen and (max-width: 1351px){
-    .des{
-    	display: none;
-    }
-    .mob{
-    	display: block;
-    }
+/* Goal text animation */
+.goal-circle[data-goal="Diversity"] {
+    animation-delay: 0s;
+}
+.goal-circle[data-goal="Inclusivity"] {
+    animation-delay: 0.3s;
+}
+.goal-circle[data-goal="Love"] {
+    animation-delay: 0.6s;
+}
+.goal-circle[data-goal="Happiness"] {
+    animation-delay: 0.9s;
+}
+.goal-circle[data-goal="Moments"] {
+    animation-delay: 1.2s;
 }
 
-
-@media screen and (max-width: 1109px) and (min-width: 769px){
-	.element-with-line{
-		height: 120px;
-	}
-	.element-with-line.blue{
-		height: 120px;
-	}
-	.actionname{
-		font-size: 26px;
-	}
-	.goalname{
-		font-size: 26px;
-	}
-	.titlediv{
-		width: 47%;
-	}
-	.navbar{
-	    padding-left: 0px;
-
-	}
-	.navbar .yes::after {
-    content: ""; }
-    .des{
-    	display: none;
-    }
-    .mob{
-    	display: block;
-    }
-    .con{
-    	display: none;
+/* Fade in the circles with a delay */
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
     }
 }
 
-@media screen and (max-width: 768px){
-	.copyright{
-		display: none;
-	}
-	.copyrightshort{
-		display: block;
-	}
-	.actiondesc{
-		font-size: 25px;
-		width: 100%;
-		text-align: center;
-	}
-	.actionname{
-		font-size: 30px;
-		width: 100%;
-		text-align: center;
-	}
-	.goalname{
-		font-size: 30px;
-		width: 100%;
-		text-align: center;	
-	}
-	.element-with-line{
-		height: 80px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	.element-with-line.blue{
-		height: 100px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	.goals{
-		height: 900px;
-	}
-	.actions{
-		height: 960px;
-	}
-	.actionssection{
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		width: 100%;
-	}
-	.title{
-		font-size: 25px;
-	}
-	.logoheader{
-		max-width: 60px;
-	}
-	.actiontitle{
-		font-size: 35px;
-		padding-top: 3vh;
-		padding-bottom: 6vh;
-	}
-	.goaltitle{
-		font-size: 35px;
-		padding-top: 3vh;
-		padding-bottom: 6vh;
-	}
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .motto{
-    	font-size: 40px;
-    }
-
-    .titlediv{
-    	width: 90%;
-    	padding: 0 20px;
-    }
-
-    .dropdown {
-        display: none;
-        width: 100%;
-    }
-
-    .dropdownmob {
-        width: 100%;
-        text-align: center;    	
-    }
-
-    .dropbtn{
-	   	font-size: 22px;
-	   	padding: 10px 0;
-		border: none;
-		outline: none;
-		color: white;
-		background-color: inherit;
-		font-family: inherit;
-		margin: 0;
-    }
-
-    .dropdown-content {
-        position: static;
-        display: block;
+/* Animate the circles to appear and scale */
+@keyframes circleAppear {
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-@media screen and (max-width: 423px){
-	.title{
-		font-size: 23px;
-	}
-	.titlediv.open{
-		padding: 10px 23px;
-	}
-	.motto{
-		font-size: 35px;
-		margin-bottom: 15px;
-	}
-	.donatebtn{
-		width: 150px;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		font-size: 16px;
-	}
-}
-
-@media screen and (max-width: 380px){
-    .dropbtn{
-	   	font-size: 19px;
-	   	padding: 9px 0;
-		border: none;
-		outline: none;
-		color: white;
-		background-color: inherit;
-		font-family: inherit;
-		margin: 0;
-    }
-    .headerimg.open{
-		background-image: url(../img/header.png);
-		height: calc(100vh - 395px);
-	}
-    .headerbar.open{
-    	height: 395px;
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .goal-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 
-	.actiondesc{
-		font-size: 22px;
-		width: 100%;
-		text-align: center;
-	}
-	.actionname{
-		font-size: 27px;
-		width: 100%;
-		text-align: center;
-	}
-	.goalname{
-		font-size: 27px;
-		width: 100%;
-		text-align: center;	
-	}
-	.title{
-		font-size: 21px;
-	}
-	.logoheader{
-		max-width: 50px;
-	}
-	.titlediv.open{
-		padding: 10px 20px;
-	}
-	.motto{
-		font-size: 30px;
-		margin-bottom: 12px;
-	}
-	.smimg{
-		width: 40px;
-	}
-	.line::before {
-	  content: "";
-	  display: block;
-	  width: 150px; 
-	}
-	.copyright{
-		display: none;
-	}
-	.copyrightshort{
-		display: block;
-		font-size: 17px;
-	}
+    .title {
+        font-size: 1.75rem;
+    }
 }
 
-@media screen and (max-width: 320px){
-	.title{
-		font-size: 20px;
-	}
-	.logoheader{
-		max-width: 45px;
-	}
-	.titlediv.open{
-		padding: 10px 10px;
-	}
-	.motto{
-		font-size: 25px;
-		margin-bottom: 9px;
-	}
-	.donatebtn{
-		width: 130px;
-		padding-top: 11px;
-		padding-bottom: 11px;
-		font-size: 13px;
-	}
-
+/* Full-Screen Action Section */
+.fullscreen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
 }
+
+.fullscreen .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.statistics .action-item {
+    margin: 20px;
+}
+
+.action-item .plus {
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.action-item p {
+    font-size: 1.25rem;
+}
+
+.action-item .count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+
+
+/* Responsive Font Adjustments */
+@media (max-width: 1440px) {
+    .action-item .count {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 1.75rem;
+    }
+    .action-item .count {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .action-item p, .action-item .count {
+        font-size: 1.25rem;
+    }
+
+    .hero .mouse-icon {
+        display: none; /* Hide on mobile */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden; /* Prevent free scrolling */
+}
+
+/* CSS for Our Goals animation */
+#our-goals .count {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#our-goals .action-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Trigger the animation on scroll */
+#our-goals .count.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Update footer background color */

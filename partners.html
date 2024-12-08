@@ -1,106 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ushaglarimiza Oyredek</title>
+    <title>Uşaqlarımıza Öyrədək - Partners</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic+Coding:wght@700&family=Nunito:wght@800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/team.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic+Coding:wght@700&family=Nunito:wght@800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <style>
+        .col-md-3{
+        
+        }
+    </style>
 </head>
-<body>
-<div class="header partners">
-        <div class="headerbar">
-            <div class="titlediv">
-                <img src="img/logo.png" class="logoheader"></img>
-                <h1 class="title">Uşaqlarımıza Öyrədək</h1>
-            </div>
-            <div class="navbar">
-                <div class="dropdown">
-                    <button href="index.html" id="homebtn" class="dropbtn">Home</button>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn yes">About Us</button>
-                    <div class="dropdown-content">
-                        <a href="team.html">Our team</a>
-                        <a href="story.html">Our story</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn yes">Events</button>
-                    <div class="dropdown-content">
-                        <a href="hosted.html">Hosted</a>
-                        <a href="planned.html">Planned</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn" id="partner">Partners</button>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Contact</button>
-                </div>
-            </div>
-        </div>
-        <div class="maindiv">
-            <div class="partnersdiv">
-                <h2 class="partnerstitle">Permanent Partners</h2>
-                <div class="partners">
-                    <img src="img/yelo.png" class="partnerimg">
-                    <img src="img/cinnabon.jpg" class="partnerimg">
-                    <img src="img/azercell.jpg" class="partnerimg">
-                </div>
-                <h2 class="partnerstitle">Educational Partners</h2>
-                <div class="partners">
-                    <img src="img/landau.jpg" class="partnerimg">
-                    <img src="img/mtk.jpeg" class="partnerimg">
-                </div>
-                <h2 class="partnerstitle">Other Partners</h2>
-                <div class="partners">
-                    <img src="img/umid.jpeg" class="partnerimg">
-                    <img src="img/autism.jpeg" class="partnerimg">
-                    <img src="img/bilgah.jpeg" class="partnerimg">
-                </div>
-                <div class="partnersspec">
-                    <img src="img/landmark.jpeg" class="partnerimg">
-                    <img src="img/eng.jpg" class="partnerimg">
-                    <img src="img/eco.png" class="partnerimg">
-                </div>
-                <div class="partnersspec">
-                    <img src="img/karabakh.png" class="partnerimg">
-                    <img src="img/medinex.png" class="partnerimg">
-                    <img src="img/ceo.jpg" class="partnerimg">
-                </div>
-                <div class="partnersspec">
-                    <img src="img/umid.png" class="partnerimg">
-                    <img src="img/fusion.jpeg" class="partnerimg">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="footer">
-        <div class="socialmediadiv">
-            <button class="smbtn" id="linkedin">
-                <img src="img/linked.png" class="smimg">
-            </button>
-            <button class="smbtn" id="insta">
-                <img src="img/insta.png" class="smimg">
-            </button>
-            <button class="smbtn" id="facebook">
-                <img src="img/facebook.png" class="smimg">
-            </button>
-            <button class="smbtn" id="tiktok">
-                <img src="img/tiktok.png" class="smimg">
-            </button>
+
+<body>
+    <!-- Header (order unchanged) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="index.html">
+                    <img src="img/logo.png" alt="Logo" class="me-2" style="width: 40px;"> Uşaqlarımıza Öyrədək
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="aboutDropdown" role="button">About Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="story.html">Our Story</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="eventsDropdown" role="button">Events</a>
+                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                <li><a class="dropdown-item" href="hosted.html">Hosted</a></li>
+                                <li><a class="dropdown-item" href="planned.html">Planned</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="partners.html">Partners</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Partners Section -->
+    <section class="partners py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Our Trusted Partners</h1>
+
+            <!-- Permanent Partners -->
+            <h2 class="partnerstitle">Our Media Partners</h2>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/AZTV.jpg" class="img-fluid partner-img" alt="AZTV">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/AZTV_radio.jpg" class="img-fluid partner-img" alt="AZTV Radio">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/azertac.jpg" class="img-fluid partner-img" alt="Azertac">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/bakuws.jpg" class="img-fluid partner-img" alt="Baku WS">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/apa.jpg" class="img-fluid partner-img" alt="Apa.az">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/xezercenter.jpg" class="img-fluid partner-img" alt="Xezer Media Merkezi">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/xezer.jpg" class="img-fluid partner-img" alt="Xezer TV">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/arazfm.jpg" class="img-fluid partner-img" alt="Araz FM">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Partners -->
+            <h2 class="partnerstitle mt-5">Our Educational Partners</h2>
+            <div class="row">
+                <div class="col-md-3"> <img src="img/partners/landau.jpg" class="img-fluid partner-img" alt="Landau">
+                </div>
+                <div class="col-md-3"> <img src="img/partners/mtk.jpeg" class="img-fluid partner-img" alt="MTK"> </div>
+                <div class="col-md-3"> <img src="img/partners/TISA.jpg" class="img-fluid partner-img" alt="TISA"> </div>
+                <div class="col-md-3"> <img src="img/partners/isops.jpg" class="img-fluid center-block" alt="ISOPS">
+                </div>
+            </div>
+
+            <!-- Other Partners -->
+            <h2 class="partnerstitle mt-5">Our Partners</h2>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/yelo.png" class="img-fluid partner-img" alt="Yelo">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/cinnabon.jpg" class="img-fluid partner-img" alt="Cinnabon">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/eco.png" class="img-fluid partner-img" alt="Ministry of Ecology">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/minisrtydigitaldev.jpg" class="img-fluid partner-img"
+                            alt="Ministry of Digital Development">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/eng.jpg" class="img-fluid partner-img" alt="Azercosmos">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/ex.jpg" class="img-fluid partner-img" alt="Extreme Hangout">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/unitednations.jpg" class="img-fluid partner-img" alt="United Nations">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/child&youth.jpg" class="img-fluid partner-img"
+                            alt="UN Major Group for Youth">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/umid.jpeg" class="img-fluid partner-img" alt="Umid Var">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/UMID.png" class="img-fluid partner-img" alt="Umid Yeri">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/autism.jpeg" class="img-fluid partner-img" alt="Autism">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/YOS.jpg" class="img-fluid partner-img" alt="Youth Aviators">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/nasa.jpg" class="img-fluid partner-img" alt="NASA Space Apps">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/siemens.jpg" class="img-fluid partner-img" alt="Siemens Partner">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/new_zeon.jpg" class="img-fluid partner-img" alt="New Zeon">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/summer_school.jpg" class="img-fluid partner-img" alt="Summer Schools">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/landmark.jpeg" class="img-fluid partner-img" alt="The Landmark">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/bakuexpo.jpg" class="img-fluid partner-img" alt="Baku Expo Center">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/the_entertainer.jpg" class="img-fluid partner-img" alt="Entertainer">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/novco.jpg" class="img-fluid partner-img" alt="NOVCO">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/azercell.jpg" class="img-fluid partner-img" alt="Zili">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/medinex.jpg" class="img-fluid partner-img" alt="Medinex">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/karabakh.png" class="img-fluid partner-img" alt="Rebuild Karabakh">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/ceo.jpg" class="img-fluid partner-img" alt="CEO Organizers Group">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-spec mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/partners/fusion.jpeg" class="img-fluid partner-img" alt="Fusion Hub">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/fusion.jpg" class="img-fluid partner-img" alt="Fusion Club">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/partners/zilli.png" class="img-fluid partner-img" alt="Zili">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="img/partners/azercosmos.jpg" class="img-fluid partner-img" alt="Zili">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="line"></div>
-        <p class="copyright">© 2023 "Uşaqlarımıza Öyrədək" non-profit organization. All rights reserved.</p>
-    </div>
-    <script src="js/script.js"></script>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section text-center p-3">
+        <div>
+            <a href="https://www.linkedin.com/in/ushaqlarimiza-oyredek-2b9051296/" class="text-white me-3"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/ushaqlarimizaoyredek/" class="text-white me-3"><i
+                    class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61552572833316" class="text-white me-3"><i
+                    class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.tiktok.com/@ushaqlarimizaoyredek?_t=8h5APnACVo9&_r=1" class="text-white me-3"><i
+                    class="fab fa-tiktok fa-2x"></i></a>
+        </div>
+        <p>© 2023-2024 "Uşaqlarımıza Öyrədək" non-profit society. All rights reserved. Demo by Logman Bayramli</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
+</html>
