@@ -1,0 +1,99 @@
+{
+    "partners": [
+        {
+            "title": "Our Media Partners",
+            "groups": [
+                {
+                    "partners": [
+                        { "img": "img/partners/AZTV.jpg", "alt": "AZTV" },
+                        { "img": "img/partners/AZTV_radio.jpg", "alt": "AZTV Radio" },
+                        { "img": "img/partners/azertac.jpg", "alt": "Azertac" },
+                        { "img": "img/partners/bakuws.jpg", "alt": "Baku WS" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/apa.jpg", "alt": "Apa.az" },
+                        { "img": "img/partners/xezercenter.jpg", "alt": "Xezer Media Merkezi" },
+                        { "img": "img/partners/xezer.jpg", "alt": "Xezer TV" },
+                        { "img": "img/partners/arazfm.jpg", "alt": "Araz FM" }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Our Educational Partners",
+            "groups": [
+                {
+                    "partners": [
+                        { "img": "img/partners/landau.jpg", "alt": "Landau" },
+                        { "img": "img/partners/mtk.jpeg", "alt": "MTK" },
+                        { "img": "img/partners/TISA.jpg", "alt": "TISA" },
+                        { "img": "img/partners/isops.jpg", "alt": "ISOPS" }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Our Partners",
+            "groups": [
+                {
+                    "partners": [
+                        { "img": "img/partners/yelo.png", "alt": "Yelo" },
+                        { "img": "img/partners/cinnabon.jpg", "alt": "Cinnabon" },
+                        { "img": "img/partners/eco.png", "alt": "Ministry of Ecology" },
+                        { "img": "img/partners/minisrtydigitaldev.jpg", "alt": "Ministry of Digital Development" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/eng.jpg", "alt": "Azercosmos" },
+                        { "img": "img/partners/ex.jpg", "alt": "Extreme Hangout" },
+                        { "img": "img/partners/unitednations.jpg", "alt": "United Nations" },
+                        { "img": "img/partners/child&youth.jpg", "alt": "UN Major Group for Youth" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/umid.jpeg", "alt": "Umid Var" },
+                        { "img": "img/partners/UMID.png", "alt": "Umid Yeri" },
+                        { "img": "img/partners/autism.jpeg", "alt": "Autism" },
+                        { "img": "img/partners/YOS.jpg", "alt": "Youth Aviators" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/nasa.jpg", "alt": "NASA Space Apps" },
+                        { "img": "img/partners/siemens.jpg", "alt": "Siemens Partner" },
+                        { "img": "img/partners/new_zeon.jpg", "alt": "New Zeon" },
+                        { "img": "img/partners/summer_school.jpg", "alt": "Summer Schools" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/landmark.jpeg", "alt": "The Landmark" },
+                        { "img": "img/partners/bakuexpo.jpg", "alt": "Baku Expo Center" },
+                        { "img": "img/partners/the_entertainer.jpg", "alt": "Entertainer" },
+                        { "img": "img/partners/novco.jpg", "alt": "NOVCO" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/azercell.jpg", "alt": "Azercell" },
+                        { "img": "img/partners/medinex.jpg", "alt": "Medinex" },
+                        { "img": "img/partners/karabakh.png", "alt": "Rebuild Karabakh" },
+                        { "img": "img/partners/ceo.jpg", "alt": "CEO Organizers Group" }
+                    ]
+                },
+                {
+                    "partners": [
+                        { "img": "img/partners/fusion.jpeg", "alt": "Fusion Hub" },
+                        { "img": "img/partners/fusion.jpg", "alt": "Fusion Club" },
+                        { "img": "img/partners/zilli.png", "alt": "Zili" },
+                        { "img": "img/partners/azercosmos.jpg", "alt": "Azercosmos" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

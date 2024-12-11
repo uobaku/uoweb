@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const newsId = urlParams.get('id');
 
-    fetch('news.json') // Fetches the news.json from the same folder as the HTML file
+    fetch('../json/news.json') // Fetches the news.json from the same folder as the HTML file
         .then(response => response.json())
         .then(data => {
             const newsDetails = data.find(newsItem => newsItem.timestamp === newsId);
@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Add the thumbnail image at the top if it exists
                 if (newsDetails.thumbnail) {
-                    contentHtml += `<img src="${newsDetails.thumbnail}"  alt="${newsDetails.short_desc}">`;
+                    contentHtml += `
+                        <div class="news-thumbnail-container">
+                            <img src="${newsDetails.thumbnail}" class="news-details-img" alt="${newsDetails.short_desc}" onclick="openLightbox(this)">
+                        </div>`;
                 }
 
                 // Add the news title and text
@@ -32,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <source src="${newsDetails.video}" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-                        </div>
-                    `;
+                        </div>`;
                 }
 
                 // Add other images after the text
@@ -46,14 +48,45 @@ document.addEventListener('DOMContentLoaded', function() {
                         imgElement.src = imgSrc;
                         imgElement.classList.add('news-details-img');
                         imgElement.alt = newsDetails.short_desc;
-                        imgContainer.appendChild(imgElement);
+                        imgElement.onclick = () => openLightbox(imgElement); // Add lightbox on click
+
+                        // Wrap each image in a container for styling if needed
+                        const imgWrapper = document.createElement('div');
+                        imgWrapper.classList.add('image-wrapper');
+                        imgWrapper.appendChild(imgElement);
+
+                        imgContainer.appendChild(imgWrapper);
                     });
 
                     newsDetailsSection.appendChild(imgContainer);
                 }
+
+                // Convert links in the text into hyperlinks
+                const paragraphs = newsDetailsSection.querySelectorAll('p');
+                paragraphs.forEach(paragraph => {
+                    let updatedText = paragraph.innerHTML;
+                    const urlRegex = /(https?:\/\/[^\s]+)/g;
+                    updatedText = updatedText.replace(urlRegex, function(url) {
+                        return `<a href="${url}" target="_blank">${url}</a>`;
+                    });
+                    paragraph.innerHTML = updatedText;
+                });
             } else {
                 newsDetailsSection.innerHTML = '<p>News item not found.</p>';
             }
         })
         .catch(error => console.error('Error fetching news details:', error));
 });
+
+// Lightbox functionality
+function openLightbox(imgElement) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    lightbox.style.display = 'flex';
+    lightboxImg.src = imgElement.src; // Set the lightbox image to the clicked image
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+}

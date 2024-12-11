@@ -1,0 +1,105 @@
+{
+    "presidency": [
+      {
+        "name": "Yusuf Karimli",
+        "role": "President of Uşaqlarımıza Öyrədək",
+        "quote": "Children are not things to be molded, but are people to be unfolded.",
+        "image": "../img/yusuf.jpg"
+      },
+      {
+        "name": "Sabina Abishova",
+        "role": "Vice-president of Uşaqlarımıza Öyrədək",
+        "quote": "If a child cannot learn the way we teach. Maybe we should teach the way they learn.",
+        "image": "../img/sabina.jpg"
+      }
+    ],
+    "administrative_team": [
+      {
+        "name": "Aysu Taghiyeva",
+        "role": "",
+        "quote": "",
+        "image": "../img/aysu_t.jpeg"
+      },
+      {
+        "name": "Celine Hadija Freeman",
+        "role": "",
+        "quote": "",
+        "image": "../img/celine.png"
+      },
+      {
+        "name": "Deniz Natavan Soltan",
+        "role": "",
+        "quote": "",
+        "image": "../img/deniz.jpeg"
+      }
+    ],
+    "volunteer_team": [
+      {
+        "name": "Abuzer Abbasova",
+        "role": "Head of Volunteer Team",
+        "quote": "",
+        "image": "../img/abuzer.jpeg"
+      },
+      {
+        "name": "Mehriban Abdurahmanova",
+        "role": "",
+        "quote": "",
+        "image": "../img/mehriban.jpg"
+      },
+      {
+        "name": "Aylin Ibrahimli",
+        "role": "",
+        "quote": "",
+        "image": "../img/aylin_i.jpg"
+      },
+      {
+        "name": "Madina Abdullayeva",
+        "role": "",
+        "quote": "",
+        "image": "../img/madina_a.jpg"
+      },
+      {
+        "name": "Bike Babayeva",
+        "role": "",
+        "quote": "",
+        "image": "../img/bike.jpeg"
+      },
+      {
+        "name": "Khadija Gurbanzade",
+        "role": "",
+        "quote": "",
+        "image": "../img/khadija.jpg"
+      },
+      {
+        "name": "Fatima Nabiyeva",
+        "role": "",
+        "quote": "",
+        "image": "../img/fatima_n.jpeg"
+      },
+      {
+        "name": "Aylin Abishova",
+        "role": "",
+        "quote": "",
+        "image": "../img/aylin_a.jpeg"
+      },
+      {
+        "name": "Ayan Majidova",
+        "role": "",
+        "quote": "",
+        "image": "../img/ayan_m.jpeg"
+      },
+      {
+        "name": "Muslim Muradov",
+        "role": "",
+        "quote": "",
+        "image": "../img/muslim.jpeg"
+      },
+      {
+        "name": "Aysel Qurbanova",
+        "role": "",
+        "quote": "",
+        "image": "../img/aysel.jpeg"
+      }
+    ]
+  }
+  
